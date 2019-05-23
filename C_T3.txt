@@ -1,0 +1,16 @@
+#include <stdio.h>
+int fmx(int v[5]){
+int i, mx=v[0];
+for(i=1;i<5;i++){
+if(mx<v[i]) mx=v[i];
+}
+return (mx);
+}
+void main(){
+int v[5]={1,3,2,5,4};
+printf("%d\n", fmx(v));
+}
+
+소감:팀원들이 서로 토의하여 모르는부분이 있으면 서현직 선배에게 물어보고 
+      잘 이해가 되었습니다.
+      들으면서 두루뭉실했던 부분은 각자가 직접 보지않고 코딩하여 익히도록 하였습니다.
