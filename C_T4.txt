@@ -1,0 +1,44 @@
+1번
+#include <stdio.h>
+struct User{
+int age;
+char n[80];
+char t[80];
+};
+void prn(struct User we[]){
+int i;
+for (i = 0; i < 3; i++) {
+printf("%d %s %s\n",we[i].age,we[i].n,we[i].t);
+}
+}
+void main(){
+struct User we[3] = {{20,"son jeong woo","010-1242-1242"},{20,"yeon bhin","010-2414-2623"},
+{20,"hee jin","010-3523-2642"}};
+prn(we);
+} 
+2번
+#include<stdio.h>
+struct User{
+int age;
+char n[80];
+char t[80];
+};
+void prn( struct User* we  ){
+printf("%d %s %s\n", we->age, we->n,we->t);
+we++;
+printf("%d %s %s\n", we->age, we->n,we->t);
+we++;
+printf("%d %s %s\n", we->age, we->n,we->t);
+}
+void main(){
+struct User we[3] = {{20,"son jeong woo","010-1242-1242"},{20,"yeon bhin","010-2414-2623"},
+{20,"hee jin","010-3523-2642"}};
+prn( we  );
+}
+작성소감
+오늘 배운 내용을 이렇게 복습할 수 있게 되어서 기억에 잘 남게 될 것 같습니다.
+구조체와 포인터를 하루만에 배워서 정리가 어려웠으나 이번 팀 과제를 통해 팀원들과 서로 부족한 부분을 채워주고 또한
+강의실에서 과제하는 도중 for문에서 막히자 8팀의 도움을 받아 해결할 수 있었습니다.
+중간고사에서 배운 내용들도 빼먹지 않고 복습하고 이때까지 수업시간에 배운 내용들을 모두 손으로 써 가면서 공부하고 제 것으로 만들 것입니다. 
+중간고사를 치고 나서 저의 부족한 부분을 알 수 있었고 그 부분들을 보완하여 기말고사 때 더욱 좋은 성적으로 보답하겠습니다.
+교수님 감사합니다 사랑합니다
